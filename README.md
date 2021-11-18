@@ -1,3 +1,11 @@
+No necesitamos crear ninguna base de datos, solo necesitamos que postgresql server este ejecutandose.
+
+En AgendaContext se detalla la cadena para conectarse al servidor,
+
+`Server=localhost;Port=5432;Database=ej1t;Username=admin;Password=admin`
+
+de ahi se puede cambiar el servidor si es remoto, el puerto pero gralmente es 5432 por defecto. El nombre de la base de datos donde van a estar las tablas, usuario y contraseña para conectarse al server y la bd.
+
 # Instalar los paquetes
 
 `dotnet add package Microsoft.EntityFrameworkCore --version 5.0.0`
@@ -16,7 +24,7 @@ installar la herramienta de entityframework
 
 `dotnet tool install dotnet-ef --version=5.0.0`
 
-Desde este paso ya tenemos todo, aca explica como crear las bases de datos https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
+Desde este paso ya tenemos todo, procedemos a crear todas las tablas [mas info](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli)
 
 `dotnet dotnet-ef migrations add InitialCreate`
 
